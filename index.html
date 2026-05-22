@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="IMG/Escudo-Inem-Transp (1).png" rel="icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        :root {
+            --bg-dark: #140406;
+            --bg-mid: #2b0608;
+            --bg-light: #5a0b0d;
+            --accent-red: #e31b23;
+            --accent-orange: #ff6a3d;
+            --accent-gold: #ffbf6b;
+            --cream: #f7e8dc;
+            --text-light: #fff7f2;
+            --text-dark: #2a1212;
+            --card: rgba(255, 245, 240, 0.92);
+            --shadow: rgba(0, 0, 0, 0.35);
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top left, rgba(255, 106, 61, 0.35), transparent 30%),
+                radial-gradient(circle at top right, rgba(255, 191, 107, 0.18), transparent 25%),
+                linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-mid) 40%, var(--bg-light) 100%);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(24, 6, 8, 0.45);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 191, 107, 0.22);
+            border-radius: 28px;
+            box-shadow: 0 18px 40px var(--shadow);
+            overflow: hidden;
+        }
+
+        .header {
+            background:
+                linear-gradient(135deg, rgba(20, 4, 6, 0.95), rgba(227, 27, 35, 0.88), rgba(255, 106, 61, 0.82)),
+                linear-gradient(120deg, rgba(255,255,255,0.12), transparent 60%);
+            color: var(--text-light);
+            padding: 34px 28px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, rgba(255,255,255,0.08), transparent 55%);
+            pointer-events: none;
+        }
+
+        .header h1 {
+            font-size: 2.7rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+        }
+
+        .header p {
+            font-size: 1.05rem;
+            opacity: 0.96;
+            color: #fff1ea;
+        }
+
+        .content {
+            padding: 30px;
+            display: grid;
+            gap: 22px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 22px;
+            padding: 22px;
+            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.14);
+            border-left: 6px solid var(--accent-red);
+            color: var(--text-dark);
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+            color: #4b1013;
+        }
+
+        .card p {
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #4b2a2a;
+            text-align: justify;
+        }
+
+        .video-card {
+            border-left-color: var(--accent-orange);
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            border-radius: 18px;
+            overflow: hidden;
+            margin-top: 12px;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 191, 107, 0.2);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 18px 24px 28px;
+            font-size: 0.95rem;
+            color: #ffd7c8;
+        }
+
+        .sparkle {
+            display: inline-block;
+            margin: 0 6px;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 14px;
+            }
+
+            .container {
+                border-radius: 20px;
+            }
+
+            .header {
+                padding: 26px 18px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 18px;
+            }
+
+            .card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="header">
+            <h1>Dylan</h1>
+            <p>Un mini resumen sobre mi</p>
+        </section>
+
+        <section class="content">
+            <article class="card">
+                <h2>Sobre mí</h2>
+                <p>
+                    Tengo 16 años, naci el 1 de enero de 2010 a las 8 de la noche en el hospital de Kennedy,
+                    estudio en el INEM Francisco de Paula Santander, soy alegre, carismatico y me gusta UmaMusume :D
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>Dato interesante</h2>
+                <p>
+                    Nikola Tesla (1856/1943) fue un inventor, ingeniero eléctrico y futurista serbio-estadounidense,
+                    ampliamente considerado uno de los científicos más brillantes e influyentes de la historia.
+                    Su trabajo sentó las bases de la tecnología moderna que utilizamos hoy en día.
+                </p>
+            </article>
+
+            <article class="card video-card">
+                <h2>Video favorito</h2>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/O5_mztsOqxY?si=1CD9hWgKRQIETe5h" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </article>
+        </section>
+
+        <div class="footer">
+            <span class="sparkle">★</span> Estilo brillante, elegante y rápido <span class="sparkle">★</span>
+        </div>
+    </main>
+</body>
+</html>
